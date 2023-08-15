@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Perfumes Latinos - Empleado del Mes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Perfumes Latinos - Empleado del Mes</h1>
+    <div class="container">
+        <form id="salesForm">
+            <label for="vendedor">Vendedor:</label>
+            <select id="vendedor">
+                <option value="juan">Juan</option>
+                <option value="pedro">Pedro</option>
+            </select>
+            <label for="producto">Producto:</label>
+            <select id="producto">
+                <option value="aqua">Aqua</option>
+                <option value="emocion">Emocion</option>
+                <option value="alegria">Alegria</option>
+                <option value="frescura">Frescura</option>
+            </select>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" min="1">
+            <button type="button" onclick="registrarVenta()">Registrar Venta</button>
+        </form>
+    </div>
+    <div class="container">
+        <h2>Resumen de Ventas</h2>
+        <table id="salesTable">
+            <tr>
+                <th>Vendedor</th>
+                <th>Aqua</th>
+                <th>Emocion</th>
+                <th>Alegria</th>
+                <th>Frescura</th>
+                <th>Total</th>
+            </tr>
+        </table>
+        <div id="employeeOfTheMonth"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
